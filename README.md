@@ -1,60 +1,114 @@
-<!-- 🌈 AYOXIC HEADER -->
-<h1 align="center">
-  🚀 AYOXIC | Data Engineer in Progress
-</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>GPS Treasure Hunt - AYOXIC</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #0f0f1a;
+            color: white;
+            line-height: 1.6;
+        }
 
-<p align="center">
-  <b>Turning Raw Data into Powerful Insights ⚡</b>
-</p>
+        .banner {
+            background: linear-gradient(90deg, #ff00cc, #3333ff);
+            padding: 40px 20px;
+            text-align: center;
+            font-size: 40px;
+            font-weight: bold;
+            letter-spacing: 3px;
+        }
 
----
+        .subtitle {
+            font-size: 18px;
+            font-weight: normal;
+            margin-top: 10px;
+        }
 
-## 🧠 About Me
+        .container {
+            padding: 40px 20px;
+            max-width: 900px;
+            margin: auto;
+        }
 
-✨ Oracle SQL Certified  
-🚀 DataCamp Data Engineer Certified  
-💻 Passionate about Data Pipelines & Scalable Systems  
-🎯 Future Data Engineer  
+        h2 {
+            color: #00ffff;
+            border-bottom: 2px solid #00ffff;
+            padding-bottom: 5px;
+        }
 
-I don’t just learn data.  
-I engineer it. Transform it. Scale it.
+        ul {
+            list-style: square;
+        }
 
----
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background: #111;
+            margin-top: 40px;
+            font-size: 14px;
+            color: #aaa;
+        }
+    </style>
+</head>
+<body>
 
-## 🔥 Tech Stack
+    <!-- AYOXIC Banner -->
+    <div class="banner">
+        AYOXIC
+        <div class="subtitle">Engineering Data. Building Experiences.</div>
+    </div>
 
-🟢 SQL  
-🐍 Python  
-📦 ETL  
-🛠 Apache Airflow  
-🗄 PostgreSQL  
-☁️ Cloud (Learning AWS)
+    <div class="container">
 
----
+        <h1>🗺️ GPS Treasure Hunt</h1>
 
-## 🌈 Current Mission
+        <h2>🌍 Project Overview</h2>
+        <p>
+            GPS Treasure Hunt is an interactive location-based experience designed
+            to simulate a real-world treasure hunt using geographic coordinates.
+            Participants navigate using GPS clues to uncover hidden destinations.
+        </p>
 
-> Building clean, scalable, powerful data systems — one pipeline at a time.
+        <h2>🎯 Objectives</h2>
+        <ul>
+            <li>Design a structured GPS-based challenge</li>
+            <li>Process and validate coordinate data</li>
+            <li>Implement logical progression between clues</li>
+            <li>Create an engaging user experience</li>
+        </ul>
 
----
+        <h2>⚙️ Technologies Used</h2>
+        <ul>
+            <li>Python</li>
+            <li>GPS Coordinate Logic</li>
+            <li>Data Processing</li>
+            <li>Algorithm Design</li>
+        </ul>
 
-## 📊 Featured Projects
+        <h2>🚀 How It Works</h2>
+        <ol>
+            <li>User receives initial GPS coordinates.</li>
+            <li>Each location unlocks a new clue.</li>
+            <li>Clues must be solved to continue.</li>
+            <li>Final destination reveals the treasure.</li>
+        </ol>
 
-🚀 SQL Analytics Project  
-📦 Mini ETL Pipeline  
-📈 Data Cleaning with Python  
+        <h2>🧠 Skills Demonstrated</h2>
+        <ul>
+            <li>Problem Solving</li>
+            <li>Data Handling</li>
+            <li>Logical Sequencing</li>
+            <li>Geolocation Concepts</li>
+        </ul>
 
-(More AYOXIC projects loading...)
+    </div>
 
----
+    <div class="footer">
+        Developed by Ayoub Janina | AYOXIC © 2026
+    </div>
 
-## ⚡ Connect With Me
-
-💼 LinkedIn: [Your LinkedIn Link Here]  
-📬 Email: your.email@example.com  
-
----
-
-<p align="center">
-  🔥 Built with ambition. Powered by discipline.  
-</p>
+</body>
+</html>
