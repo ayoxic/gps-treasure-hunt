@@ -1,3 +1,7 @@
+![JavaScript](https://img.shields.io/badge/JavaScript-ES6-yellow)
+![Firebase](https://img.shields.io/badge/Firebase-RealtimeDB-orange)
+![Status](https://img.shields.io/badge/Status-Active-brightgreen)
+![License](https://img.shields.io/badge/License-MIT-blue)
 # 📍 GPS Treasure Hunt Game
 
 A real-time GPS-based treasure hunt web application built with **JavaScript, Firebase Realtime Database, and Geolocation API**.
