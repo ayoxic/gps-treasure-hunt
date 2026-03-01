@@ -93,7 +93,7 @@ gps-treasure-hunt/
 ## ⚙️ How To Run Locally
 
 1. Clone the repository:
-   git clone https://github.com/YOUR_USERNAME/gps-treasure-hunt.git
+   git clone https://github.com/ayoxic/gps-treasure-hunt.git
 
 2. Open the project folder
 
