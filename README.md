@@ -1,13 +1,15 @@
+## 📸 Screenshot
+
+![App Screenshot](docs/screenshot.png)
 ![JavaScript](https://img.shields.io/badge/JavaScript-ES6-yellow)
 ![Firebase](https://img.shields.io/badge/Firebase-RealtimeDB-orange)
 ![Status](https://img.shields.io/badge/Status-Active-brightgreen)
 ![License](https://img.shields.io/badge/License-MIT-blue)
-# 📍 GPS Treasure Hunt Game
+# 📍 GPS Treasure Hunt System
 
-A real-time GPS-based treasure hunt web application built with **JavaScript, Firebase Realtime Database, and Geolocation API**.
+A real-time location-based web application that allows players to unlock secrets by physically reaching GPS coordinates within a timed challenge.
 
-This project allows players to physically move to secret locations within a time limit to unlock hidden rewards.
-
+Designed with persistent state reconstruction, backend-driven secrets, and Firebase integration.
 ---
 
 ## 🚀 Live Demo
