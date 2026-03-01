@@ -1,86 +1,135 @@
-# 🗺️ GPS Treasure Hunt
+# 📍 GPS Treasure Hunt Game
 
-## 🔥 AYOXIC
+A real-time GPS-based treasure hunt web application built with **JavaScript, Firebase Realtime Database, and Geolocation API**.
 
-Interactive real-world treasure hunting powered by GPS.
+This project allows players to physically move to secret locations within a time limit to unlock hidden rewards.
 
+---
 
-ABOUT
-------
-GPS Treasure Hunt is an interactive, location-based adventure game
-where players explore real-world locations using GPS coordinates
-to discover hidden treasures.
+## 🚀 Live Demo
 
-Built for explorers.
-Designed for adventure.
-Powered by navigation.
+👉 https://your-netlify-link.netlify.app  
+_(Replace with your real link)_
 
+---
 
-FEATURES
---------
-- Real-time GPS tracking
-- Coordinate-based treasure system
-- Score tracking & leaderboard
-- Mobile-friendly experience
-- Secure user authentication
-- Interactive map integration
+## 🎯 Project Overview
 
+This application is a location-based interactive game where:
 
-HOW IT WORKS
--------------
-1. Create an account or sign in
-2. View available treasure locations on the map
-3. Travel to the coordinates in real life based on the hints
-4. When within range, unlock the treasure
-5. Earn points and compete on the leaderboard
+- Players must reach secret GPS coordinates
+- Each location has a countdown timer
+- Progress persists after page refresh
+- Rewards unlock after completing milestones
+- Secret locations are securely stored in Firebase (not exposed in frontend)
 
+---
 
-INSTALLATION
--------------
-Clone the repository:
+## 🛠 Tech Stack
 
-git clone https://github.com/ayoxic/gps-treasure-hunt.git
+- **Frontend:** HTML, CSS, Vanilla JavaScript  
+- **Backend:** Firebase Realtime Database  
+- **APIs Used:**  
+  - Geolocation API  
+  - Firebase SDK  
+- **Hosting:** Netlify  
 
-Then:
+---
 
-cd gps-treasure-hunt
+## 🔐 Key Features
 
-npm install
+### ✅ Secure Secret Locations
+GPS coordinates are stored in Firebase and loaded dynamically.  
+They are not visible in browser inspect tools.
 
-npm start
+### ⏳ Persistent Countdown
+The timer does not reset when the page refreshes.
 
+### 💾 State Reconstruction
+After refresh:
+- Completed locations remain completed
+- Failed locations remain failed
+- Active countdown resumes correctly
 
-GAME RULES
------------
-- Progress can only be made within the allowed GPS radius
-- Treasures are time-limited
-- Points are awarded based on distance
-- Leaderboard resets based on event schedule
+### 🎁 Reward System
+Rewards unlock at:
+- 4 secrets → First reward
+- 5 secrets → Second reward
+- 6 secrets → Final treasure
 
+### 📡 Real-Time GPS Distance Tracking
+Distance is calculated using the Haversine formula.
 
-TECH STACK
------------
-Frontend: HTML, CSS, JavaScript
-Backend: (Add your backend here)
-Maps & GPS API Integration
+---
 
+## 🧠 Architecture Overview
 
-FUTURE IMPROVEMENTS
--------------------
-- Multiplayer team mode
-- AR treasure view
-- Player messaging system
-- Custom treasure creation tools
+Frontend  
+↓  
+Firebase Realtime Database  
+↓  
+Secret Locations / Game Progress  
 
+Game state structure:
 
-AUTHOR
--------
-Created by AYOXIC
+secretLocations/{id}  
+gameProgress/{secretId}  
 
+LocalStorage is used for temporary persistence and refresh recovery.
 
-LICENSE
---------
-MIT License
+---
 
+## 📂 Project Structure
 
-If you enjoy this project, consider starring the repository.
+gps-treasure-hunt/
+│
+├── frontend/
+│   └── index.html
+│
+├── README.md
+└── .gitignore
+
+---
+
+## ⚙️ How To Run Locally
+
+1. Clone the repository:
+   git clone https://github.com/YOUR_USERNAME/gps-treasure-hunt.git
+
+2. Open the project folder
+
+3. Deploy using:
+   - Netlify
+   - Firebase Hosting
+   - Or a local HTTPS server
+
+⚠️ Geolocation requires HTTPS in most browsers.
+
+---
+
+## 🔥 Future Improvements
+
+- Firebase Authentication
+- Server-side GPS validation (Cloud Functions)
+- Admin monitoring dashboard
+- Multiplayer mode
+- Leaderboard system
+- Anti-GPS spoofing protection
+
+---
+
+## 📈 What This Project Demonstrates
+
+- Real-time state management
+- Backend integration with Firebase
+- Secure data handling
+- Persistent UI reconstruction
+- GPS-based application logic
+- Reward system architecture
+
+---
+
+## 👨‍💻 Author
+
+Ayoub  
+Data & Software Engineering Student
