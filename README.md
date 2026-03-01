@@ -44,7 +44,9 @@ git clone https://github.com/ayoxic/gps-treasure-hunt.git
 Then:
 
 cd gps-treasure-hunt
+
 npm install
+
 npm start
 
 
