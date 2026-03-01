@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GPS Treasure Hunt</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-database-compat.js"></script>
+</head>
+
+<body>
+
+    <div class="header">
+        <h1>GPS Treasure Hunt</h1>
+        <p>Find all secret locations before time runs out!</p>
+    </div>
+
+    <div class="grid">
+        <div class="counter active" id="counter1">
+            <h3>Secret #1</h3>
+            <div class="hint">🔒 Hidden</div>
+            <div class="distance">🔒 LOCKED</div>
+            <div class="countdown" id="countdown1">--</div>
+        </div>
+
+        <div class="counter locked" id="counter2">
+            <h3>Secret #2</h3>
+            <div class="hint">🔒 Hidden</div>
+            <div class="distance">🔒 LOCKED</div>
+        </div>
+
+        <div class="counter locked" id="counter3">
+            <h3>Secret #3</h3>
+            <div class="hint">🔒 Hidden</div>
+            <div class="distance">🔒 LOCKED</div>
+        </div>
+
+        <div class="counter locked" id="counter4">
+            <h3>Secret #4</h3>
+            <div class="hint">🔒 Hidden</div>
+            <div class="distance">🔒 LOCKED</div>
+        </div>
+
+        <div class="counter locked" id="counter5">
+            <h3>Secret #5</h3>
+            <div class="hint">🔒 Hidden</div>
+            <div class="distance">🔒 LOCKED</div>
+        </div>
+
+        <div class="counter locked" id="counter6">
+            <h3>Secret #6</h3>
+            <div class="hint">🔒 Hidden</div>
+            <div class="distance">🔒 LOCKED</div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+
+</body>
+</html>
