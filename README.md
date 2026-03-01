@@ -8,8 +8,7 @@ This project allows players to physically move to secret locations within a time
 
 ## 🚀 Live Demo
 
-👉 https://your-netlify-link.netlify.app  
-_(Replace with your real link)_
+👉 https://subtle-belekoy-8b0433.netlify.app
 
 ---
 
