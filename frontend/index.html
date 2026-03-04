@@ -6,17 +6,18 @@
     <title>GPS Treasure Hunt</title>
 
     <link rel="stylesheet" href="style.css">
-
-    <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-app-compat.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-database-compat.js"></script>
+  
 </head>
 
 <body>
 
+    <div class="countdown" id="countdown1">--</div>
+    
     <div class="header">
         <h1>GPS Treasure Hunt</h1>
         <p>Find all secret locations before time runs out!</p>
     </div>
+
 
     <div class="grid">
         <div class="counter active" id="counter1">
@@ -56,8 +57,50 @@
             <div class="distance">🔒 LOCKED</div>
         </div>
     </div>
+    <div class="progress-container">
+    <div class="progress-label">Progress</div>
 
-    <script src="app.js"></script>
+    <div class="progress-bar">
+        <div class="progress-fill" id="progressFill"></div>
+    </div>
 
+    <div class="reward-icons">
+        <div class="reward-icon" id="icon4">🔒</div>
+        <div class="reward-icon" id="icon5">🔒</div>
+        <div class="reward-icon" id="icon6">🔒</div>
+    </div>
+
+    <div class="progress-text" id="progressText">
+        0/6 Secrets Found
+    </div>
+</div>
+<div id="reward4" class="reward-popup">
+    <div class="reward-emoji">💍</div>
+    <h2>FIRST REWARD!</h2>
+    <button onclick="closeReward(4)">Continue</button>
+</div>
+
+<div id="reward5" class="reward-popup">
+    <div class="reward-emoji">💎</div>
+    <h2>SECOND REWARD!</h2>
+    <button onclick="closeReward(5)">Continue</button>
+</div>
+
+<div id="reward6" class="reward-popup">
+    <div class="reward-emoji">🎁</div>
+    <h2>SPECIAL SURPRISE!</h2>
+    <button onclick="closeReward(6)">Finish</button>
+</div>
+      <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-auth-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-database-compat.js"></script>
+
+<script src="app.js"></script>
+<div id="photoModal" class="photo-modal">
+    <div class="photo-content">
+        <img id="photoImage" class="photo-img" src="">
+        <div id="photoText" class="photo-text"></div>
+    </div>
+</div>
 </body>
 </html>

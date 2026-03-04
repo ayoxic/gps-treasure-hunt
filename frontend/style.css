@@ -5,28 +5,61 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
-    background: #111;
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    min-height: 100vh;
+
+    background: url("https://i.pinimg.com/1200x/f8/e8/5a/f8e85a7578ae9ab272ba92f0725ba679.jpg") no-repeat center center fixed;
+    background-size: cover;
+
     color: white;
-    padding: 20px;
+    padding: 40px 20px;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.25); /* lower = clearer */
+    z-index: -1;
 }
 
 .header {
     text-align: center;
     margin-bottom: 30px;
 }
-
 .grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    max-width: 1100px;
+    margin: 50px auto;
+}
+.counter {
+    background: rgba(255,255,255,0.15);
+    backdrop-filter: blur(12px);
+    padding: 30px;
+    border-radius: 20px;
+    text-align: center;
+    min-height: 200px;
+    position: relative; 
+    transition: all 0.3s ease;
 }
 
-.counter {
-    background: #1e1e1e;
-    padding: 20px;
-    border-radius: 12px;
-    text-align: center;
+
+.counter.locked {
+    opacity: 0.5;
+}
+
+.counter h3 {
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+}
+
+.distance {
+    font-size: 2.3rem;
+    font-weight: bold;
+    margin-top: 20px;
 }
 
 .counter.active {
@@ -44,3 +77,169 @@ body {
 .counter.locked {
     opacity: 0.5;
 }
+.progress-container {
+    background: rgba(255,255,255,0.15);
+    padding: 15px;
+    border-radius: 15px;
+    margin: 30px auto;
+    max-width: 1000px;
+    backdrop-filter: blur(10px);
+    position: relative;
+    text-align: center;
+}
+
+.progress-label {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 25px;
+    background: rgba(100,100,100,0.4);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.countdown {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+
+    
+    background: #1e1e1e;
+    border: 2px solid orange;
+    color: orange;
+
+    padding: 6px 12px;
+    border-radius: 20px;
+
+    font-size: 0.9rem;
+    font-weight: bold;
+
+    box-shadow: 0 0 10px rgba(0,0,0,0.4);
+}
+
+.progress-fill {
+    height: 100%;
+    width: 0%;
+    background: linear-gradient(90deg, #f39c12, #2ecc71);
+    transition: width 0.8s ease;
+}
+
+.progress-text {
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+.reward-icons {
+    position: absolute;
+    top: -15px;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.reward-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: rgba(100,100,100,0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    opacity: 0.4;
+    transition: all 0.5s ease;
+}
+
+.reward-icon.unlocked {
+    opacity: 1;
+    background: linear-gradient(45deg, gold, orange);
+    box-shadow: 0 0 15px gold;
+}
+.reward-popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #2ecc71;
+    padding: 30px;
+    border-radius: 20px;
+    text-align: center;
+    z-index: 2000;
+}
+
+.reward-popup.show {
+    display: block;
+}
+
+.reward-emoji {
+    font-size: 60px;
+    margin-bottom: 15px;
+}
+.photo-modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.85);
+    z-index: 3000;
+    align-items: center;
+    justify-content: center;
+}
+
+.photo-modal.show {
+    display: flex;
+}
+
+.photo-content {
+    position: relative;
+    max-width: 80%;
+    max-height: 80%;
+}
+
+.photo-img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+.photo-text {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0,0,0,0.8);
+    padding: 15px 25px;
+    border-radius: 20px;
+    font-weight: bold;
+}
+.counter.success {
+    background: rgba(46, 204, 113, 0.35);
+    border: 3px solid #2ecc71;
+    box-shadow: 0 0 25px rgba(46,204,113,0.6);
+}
+
+.counter.missed {
+    background: rgba(231, 76, 60, 0.35);
+    border: 3px solid #e74c3c;
+    box-shadow: 0 0 25px rgba(231,76,60,0.6);
+}
+
+.counter.active {
+    border: 3px solid #f39c12;
+    box-shadow: 0 0 25px rgba(243,156,18,0.6);
+}
+@media (max-width: 900px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+}
+

@@ -14,7 +14,7 @@ Designed with persistent state reconstruction, backend-driven secrets, and Fireb
 
 ## 🚀 Live Demo
 
-👉 https://subtle-belekoy-8b0433.netlify.app
+👉 https://papaya-paprenjak-350fa3.netlify.app/
 
 ---
 
