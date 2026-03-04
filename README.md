@@ -1,6 +1,6 @@
 ## 📸 Screenshot
 
-![App Screenshot](docs/screenshot.png)
+![App Screenshot](./docs/Screenshot.png)
 ![JavaScript](https://img.shields.io/badge/JavaScript-ES6-yellow)
 ![Firebase](https://img.shields.io/badge/Firebase-RealtimeDB-orange)
 ![Status](https://img.shields.io/badge/Status-Active-brightgreen)
